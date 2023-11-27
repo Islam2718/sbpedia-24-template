@@ -49,6 +49,10 @@ body {
   @include breakpoint(sm){
     font-size: $fs-body !important;
   }
+  &.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
 }
 body.overflow{
 overflow: hidden;
