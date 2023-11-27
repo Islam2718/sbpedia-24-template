@@ -20,27 +20,29 @@
     <!-- menu start -->
     <header class="header">
         <div class="container-fluid">
-            <div class="menu-area row">
-                <div class="col-md-4 position-relative">
-                    <div class="left-side-menu d-flex ">
+            <div class="menu-area ">
+                <div class="left-side-menu">
+                    <div class="left-menu ">
                         <!-- Example single danger button -->
                         <div class="dropdow d-flex align-items-center">
                             <a class="drop-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Create Now
+                                Create Now
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </div>
-                        <div class="language">
-                            <select class="form-select form-select-sm" aria-label="Small select example">
-                                <option selected>ENG</option>
-                                <option value="1">BN</option>
-                                <option value="2">CH</option>
-                                <option value="3">JP</option>
-                            </select>
+                        <div class="language d-flex align-items-center">
+                            <a class="drop-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ENG
+                            </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                                <li><a class="dropdown-item" href="#">BAN</a></li>
+                                <li><a class="dropdown-item" href="#">CH</a></li>
+                            </ul>
                         </div>
                         <div class="search">
                             <div class="search-icon" onclick="toggleSearch()"><img src="assets/images/serach.png" alt="" class="img-fluid"></div>
@@ -49,33 +51,113 @@
                                 <input class="form-control" type="text" placeholder="serach">
                                 <span class="input-group-text"  onclick="toggleSearch()">&times;</span>
                             </div>
-                            
                         </div>
                         <div class="theme-light-dark  position-inherit">
                             <a href="#0" class="search-icon" onclick="toggleTheme()"><img src="assets/images/sun.png" alt="n/a" class="img-fluid"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="middle-menu h-100">
-                        <div class="logo d-flex justify-content-center align-items-center h-100">
-                            <img src="assets/images/logo.png" alt="n/a" class="img-fluid">
-                            <p>SOCIAL BUSINESS <span> PEDIA</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="right-side-menu d-flex justify-content-end">
+                <div>
+                    <div class="right-side-menu">
                         <a href="#0"><img src="assets/images/login.png" alt="n/a" class="img-fluid">LOGIN</a>
                         <a href="#0"><img src="assets/images/registration.png" alt="n/a" class="img-fluid">REGISTER</a>
                         <a href="#0"><img src="assets/images/menubar.png" alt="n/a" class="img-fluid"></a>
                     </div>
                 </div>
             </div>
+            <div class="mobile-menu-area">
+                <div class="row">
+                    <div class="col">
+                        <a href="#0"><img src="assets/images/menubar.png" alt="n/a" class="img-fluid"></a>
+                    </div>
+                    <div class="col">
+                        <div class="logo d-flex justify-content-center align-items-center h-100">
+                            <img src="assets/images/logo.png" alt="n/a" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <div class="right-side-menu justify-content-end d-flex">
+                                <a href="#0" class="search-icon" onclick="toggleTheme()"><img src="assets/images/sun.png" alt="n/a" class="img-fluid"></a>
+                                <a href="#0"><img src="assets/images/login.png" alt="n/a" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <div class="sidebar-menu">
+        <div class="top-bar ">
+            <div class="d-flex justify-content-center"><img src="assets/images/logo.png" alt="n/a" class="img-fluid"></div>
+            <div class="d-flex justify-content-center">
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option selected>Create Now</option>
+                    <option value="1">Action</option>
+                    <option value="2">Link 1</option>
+                    <option value="3">Link 2</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option selected>EnG</option>
+                    <option value="1">BN</option>
+                    <option value="2">CH</option>
+                    <option value="3">JP</option>
+                </select>
+                <div class="search-sidebar">
+                    <div class="search-icon" onclick="toggleSearch()"><img src="assets/images/search-mobile.png" alt="" class="img-fluid"></div>
+                    <div class="input-group mb-3 search-form">
+                        <button type="submit" class="input-group-text" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input class="form-control" type="text" placeholder="serach">
+                        <span class="input-group-text"  onclick="toggleSearch()">&times;</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="sidebar-main-menu">
+                <li><a href="#0"><img src="assets/images/home.png" alt="" class="img-fluid"> Home</a></li>
+                <li><a href="#0"><img src="assets/images/world.png" alt="" class="img-fluid"> SB World</a></li>
+                <li><a href="#0"><img src="assets/images/academi.png" alt="" class="img-fluid"> Academia</a></li>
+                <li><a href="#0"><img src="assets/images/event.png" alt="" class="img-fluid"> Events</a></li>
+                <li><a href="#0"><img src="assets/images/design.png" alt="" class="img-fluid"> Design Lab</a></li>
+                <li><a href="#0"><img src="assets/images/news.png" alt="" class="img-fluid"> SB News & Media</a></li>
+                <li><a href="#0"><img src="assets/images/wiki.png" alt="" class="img-fluid"> SB Wiki</a></li>
+                <li><a href="#0"><img src="assets/images/video.png" alt="" class="img-fluid"> SB Video</a></li>
+                <li><a href="#0"><img src="assets/images/update.png" alt="" class="img-fluid"> Sb Updatesd</a></li>
+                <li><a href="#0"><img src="assets/images/network.png" alt="" class="img-fluid"> SB Networks</a></li>
+                <li><a href="#0"><img src="assets/images/book.png" alt="" class="img-fluid"> Book Shop</a></li>
+                <li><a href="#0"><img src="assets/images/help.png" alt="" class="img-fluid"> Help Desk</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- menu end -->
-
+    <!-- footer start -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/footer_logo.png" alt="n/a" class="img-fluid">
+                    <h4 class="mt-5">
+                        Connect With Us
+                    </h4>
+                    <ul class="social-link">
+                        <li><a href="#0"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#0"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#0"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#0"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8"></div>
+            </div>
+        </footer>
+    <!-- footer end -->
+    <div class="logo d-flex justify-content-center align-items-center h-100">
+        <img src="assets/images/logo.png" alt="n/a" class="img-fluid">
+        <p>SOCIAL BUSINESS <span> PEDIA</span></p>
+        <select class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>ENG</option>
+            <option value="1">BN</option>
+            <option value="2">CH</option>
+            <option value="3">JP</option>
+        </select>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script>

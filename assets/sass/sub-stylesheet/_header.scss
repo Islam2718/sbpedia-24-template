@@ -4,71 +4,105 @@
     border: 1px solid #E7EAED;
     height: 70px;
     .menu-area {
-        .left-side-menu{
-            .dropdow{
-                border-right: 1px solid #E7EAED;
-                padding: 15px 25px;
-                .drop-btn{
-                    text-transform: uppercase;
-                    color: #4F4F4F;
-                    padding: 0px 0px;
-                    font-size: 16px;
+        display: none;
+        justify-content: space-between;
+        @include breakpoint(lg){
+            display: flex;
+            justify-content: space-between;
+            .left-side-menu{
+                .left-menu {
+                    display: flex;
+                    .dropdow{
+                        border-right: 1px solid #E7EAED;
+                        padding: 15px 25px;
+                        .drop-btn{
+                            text-transform: uppercase;
+                            color: #4F4F4F;
+                            padding: 0px 0px;
+                            font-size: 1rem;
+                        }
+                    }
                 }
-            }
-            .language, .search, .theme-light-dark {
-                border-right: 1px solid #E7EAED;
-                padding: 15px 25px;
-            }
-            
-            .search{
-                font-size: 16px;
-                position: inherit;
-                .search-form {
-                    position: absolute;
-                    top: 15px;
-                    left: 10px;
-                    width: 0;
-                    opacity: 0;
-                    transition: all 0.5s ease;
-                  }
-                  .search-form.active {
-                    width: 100%;
-                    opacity: 1;
-                  
-                  }
-            }
-        }
-        .middle-menu{
-            .logo {
-                p{
-                    font-size: 23px;
-                    color: #136A82;
-                    margin: 0;
-                    padding: 0;
-                    font-weight: 1000;
-                    span{
-                        color: #49ADA1;
+                
+                .language, .search, .theme-light-dark {
+                    border-right: 1px solid #E7EAED;
+                    padding: 15px 25px;
+                }
+                .language{
+                    .drop-btn{
+                        text-transform: uppercase;
+                        color: #4F4F4F;
+                        padding: 0px 0px;
+                        font-size: 1rem;
+                    }
+                }
+                .search-icon{
+                    padding: 5px 0;
+                    img{
+                        max-height: 29px;
+                    }
+                }
+                .search{
+                    font-size: 1rem;
+                    position: inherit;
+                    
+                    .search-form {
+                        position: absolute;
+                        top: 15px;
+                        left: 10px;
+                        width: 0;
+                        opacity: 0;
+                        transition: all 0.5s ease;
+                    }
+                    .search-form.active {
+                        width: 300px;
+                        opacity: 1;
                     }
                 }
             }
-        }
-        .right-side-menu{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            a{
-                font-size: 16px;
-                border-right: 1px solid #E7EAED;
-                color: #4F4F4F;
-                padding: 15px 25px;
-                img{
-                    margin: 0 10px ;
-                }
-                &:hover{
-                    text-decoration: underline;
-
+            .middle-menu{
+                .logo {
+                    p{
+                        font-size: 1.438rem;
+                        color: #136A82;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 1000;
+                        span{
+                            color: #49ADA1;
+                        }
+                    }
                 }
             }
+            .right-side-menu{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                a{
+                    font-size: 1rem;
+                    border-right: 1px solid #E7EAED;
+                    color: #4F4F4F;
+                    padding: 15px 25px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin: 0 10px ;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+
+                    }
+                }
+            } 
+        }
+        
+    }
+    .mobile-menu-area{
+        display: block;
+        @include breakpoint(lg){
+            display: none;
         }
     }
 }
