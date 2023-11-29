@@ -6,7 +6,31 @@
     <title>Sb Pedia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/sass/style.css">
+    <style>    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    </style>
 </head>
   <body>
     
@@ -127,6 +151,165 @@
         </div>
     </div>
     <!-- menu end -->
+    <!-- banner start -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="banner-logo-area text-center py-5">
+                <img src="assets/images/logo_full.png" alt="n/a" class="img-fluid">
+            </div>
+        </div>
+        
+        <div class="banner-slider-area d-flex">
+            <div class="swiper mySwiper d-lg-block d-none" style="height: 100px; width: 100px;">
+                <div class="swiper-wrapper"></div>
+                <div class="myswiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="myswiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper flex-grow-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_world.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB World</h4>
+                            <p>Social Business Events</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_event.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB Events</h4>
+                            <p>Sector-Wise SB</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_wiki.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB Wiki</h4>
+                            <p>Future of Human Beings</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_news.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB News & Media</h4>
+                            <p>SB Photo and Video Gallary</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_design.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>Design Lab</h4>
+                            <p>The betterment of society</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_network.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB Network</h4>
+                            <p>The betterment of society</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-area">
+                            <img src="assets/images/slider_world.png" alt="n/s" class="img-fluid">
+                        </div>
+                        <div class="slider-content">
+                            <h4>SB World</h4>
+                            <p>Social Business Events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination d-lg-none d-block"></div>
+            </div>
+        </div>
+        <div class="banner-img-area">
+            <img src="assets/images/banner.png" alt="n/a" class="img-fluid w-100">
+        </div>
+    </section>
+    <!-- banner end -->
+    <!-- news start -->
+    <section class="news-area">
+        <div class="container">
+            <div class="section-title">
+                <h4>News</h4>
+                <div class="see-more">
+                    <a href="#0"> See all news <img src="assets/images/right-arrrow.png" alt="n/a" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/news_banner.png" alt="n/a" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="news-date"><img src="assets/images/clock.png" alt="n/a" class="img-fluid"> June 27- 30, 2022</div>
+                    <div class="news-title">
+                        <h3>Postponement of the 11th Social Business Academia Conference</h3>
+                    </div>
+                    <div class="news-content">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="#0"> Read More <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news end -->
+    <!-- news-trending start -->
+    <section class="news-trending-area">
+        <div class="container">
+            <div class="text-center">
+                <h3>Trending News</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+            </div>
+            <div class="news-slider">
+                <div class="swiper newsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="news-image">
+                                    <img src="assets/images/tranding_news_1.png" alt="n/a" class="img-fluid">
+                                    <span>  Social Business</span>
+                                </div>
+                                <div class="new-date">
+                                    <i class="fa-regular fa-clock"></i> June 27- 30, 2022
+                                </div>
+                                <div class="news-title">
+                                    <p>Postponement of the 11th Social Business Academia Conference</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news-trending end -->
+    
     <!-- footer start -->
         <footer class="footer">
             <div class="footer-area">
@@ -193,7 +376,7 @@
                         <div class="d-flex flex-wrap">
                             <img src="assets/images/logo.png" alt="n/a" class="img-fluid">
                             <p>© 2023 SB Pedia</p>
-                            <ul class="d-flex">
+                            <ul class="d-flex flex-wrap">
                                 <li><a href="#0"> Idea Bank </a></li>
                                 <li><a href="#0"> SB Updated </a></li>
                                 <li><a href="#0"> SB Networks </a></li>
@@ -215,18 +398,12 @@
             </div>
         </footer>
     <!-- footer end -->
-    <!-- <div class="logo d-flex justify-content-center align-items-center h-100">
-        <img src="assets/images/logo.png" alt="n/a" class="img-fluid">
-        <p>SOCIAL BUSINESS <span> PEDIA</span></p>
-        <select class="form-select form-select-sm" aria-label="Small select example">
-            <option selected>ENG</option>
-            <option value="1">BN</option>
-            <option value="2">CH</option>
-            <option value="3">JP</option>
-        </select>
-    </div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         // Add your JavaScript functions here
 
@@ -247,6 +424,57 @@
             var responsiveMenu = document.querySelector('.responsive-menu');
             responsiveMenu.classList.toggle('show');
         }
+        
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".myswiper-button-next",
+                prevEl: ".myswiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 3.5,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 2.8,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 3.7,
+                spaceBetween: 20,
+                },
+                1440: {
+                slidesPerView: 4.4,
+                spaceBetween: 20,
+                },
+                1800: {
+                slidesPerView: 5.7,
+                spaceBetween: 20,
+                },
+            },
+        });
+        var swiper = new Swiper(".newsSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
   </body>
 </html>

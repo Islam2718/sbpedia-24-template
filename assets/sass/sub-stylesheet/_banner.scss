@@ -1,3 +1,93 @@
 //*===== banner area start ====*//
-
+.banner-area{
+    background: #F8FBFF;
+    .banner-slider-area{
+        width: 100%;
+        padding-bottom: 50px;
+        @include breakpoint(lg){
+            width: 90%;
+            margin-left: auto;
+            padding-bottom: 50px;
+        }
+        .mySwiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: flex;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 20px;
+                    .icon-area{
+                        img{
+                            height: 31px;
+                        }
+                    }
+                    .slider-content{
+                        padding-left: 10px;
+                        h4{
+                            font-size: 16px;
+                            color: #4F4F4F;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: #4F4F4F;
+                            margin: 0;
+                        }
+                    }
+                    &.swiper-slide-active{
+                        box-shadow: 0px 4px 20px 0px rgba(220, 220, 220, 0.25);
+                    }
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet {
+                    &.swiper-pagination-bullet-active{
+                        background-color: #49ADA1;
+                    }
+                }
+            }
+            .myswiper-button-next{
+                height: 30px;
+                width: 30px;
+                background-color: white;
+                color: #1DBA90;
+                position: absolute;
+                top: 40%;
+                left: 40px;
+                cursor: pointer;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px 0px rgba(107, 107, 107, 0.25);
+                &.swiper-button-disabled{
+                    background-color: white;
+                    color: #4F4F4F;
+                    box-shadow: 0px 0px 0px 0px rgba(107, 107, 107, 0.25);
+                }
+            }
+            .myswiper-button-prev{
+                height: 30px;
+                width: 30px;
+                background-color: white;
+                color: #1DBA90;
+                position: absolute;
+                top: 40%;
+                cursor: pointer;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px 0px rgba(107, 107, 107, 0.25);
+                &.swiper-button-disabled{
+                    background-color: white;
+                    color: #4F4F4F;
+                    box-shadow: 0px 0px 0px 0px rgba(107, 107, 107, 0.25);
+                }
+            }
+        }
+    }
+}
 //*===== banner area start ====*//

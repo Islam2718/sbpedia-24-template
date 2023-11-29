@@ -282,6 +282,90 @@ a {
   margin-right: 20px;
 }
 
+.banner-area {
+  background: #F8FBFF;
+}
+.banner-area .banner-slider-area {
+  width: 100%;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .banner-area .banner-slider-area {
+    width: 90%;
+    margin-left: auto;
+    padding-bottom: 50px;
+  }
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .icon-area img {
+  height: 31px;
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .slider-content {
+  padding-left: 10px;
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .slider-content h4 {
+  font-size: 16px;
+  color: #4F4F4F;
+  font-weight: bold;
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .slider-content p {
+  font-size: 14px;
+  color: #4F4F4F;
+  margin: 0;
+}
+.banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-active {
+  box-shadow: 0px 4px 20px 0px rgba(220, 220, 220, 0.25);
+}
+.banner-area .banner-slider-area .mySwiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #49ADA1;
+}
+.banner-area .banner-slider-area .mySwiper .myswiper-button-next {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color: #1DBA90;
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(107, 107, 107, 0.25);
+}
+.banner-area .banner-slider-area .mySwiper .myswiper-button-next.swiper-button-disabled {
+  background-color: white;
+  color: #4F4F4F;
+  box-shadow: 0px 0px 0px 0px rgba(107, 107, 107, 0.25);
+}
+.banner-area .banner-slider-area .mySwiper .myswiper-button-prev {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color: #1DBA90;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(107, 107, 107, 0.25);
+}
+.banner-area .banner-slider-area .mySwiper .myswiper-button-prev.swiper-button-disabled {
+  background-color: white;
+  color: #4F4F4F;
+  box-shadow: 0px 0px 0px 0px rgba(107, 107, 107, 0.25);
+}
+
 .footer .footer-area {
   background: #F8FBFF;
   background-image: url("./../images/footer_bg.png");
