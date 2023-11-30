@@ -5,9 +5,9 @@
         width: 100%;
         padding-bottom: 50px;
         @include breakpoint(lg){
-            width: 90%;
+            width: 100%;
             margin-left: auto;
-            padding-bottom: 50px;
+            padding-bottom: 25px;
         }
         .mySwiper{
             .swiper-wrapper{
@@ -54,7 +54,7 @@
                 position: absolute;
                 top: 40%;
                 cursor: pointer;
-                left: 10px;
+                left: 50px;
                 z-index: 2;
                 display: flex;
                 align-items: center;
@@ -74,7 +74,7 @@
                 color: #1DBA90;
                 position: absolute;
                 top: 40%;
-                left: 50px;
+                left: 10px;
                 cursor: pointer;
                 z-index: 2;
                 display: flex;
