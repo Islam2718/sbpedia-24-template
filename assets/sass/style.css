@@ -291,9 +291,9 @@ a {
 }
 @media (min-width: 992px) {
   .banner-area .banner-slider-area {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 }
 .banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide {
@@ -332,7 +332,7 @@ a {
   position: absolute;
   top: 40%;
   cursor: pointer;
-  left: 10px;
+  left: 50px;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -352,7 +352,7 @@ a {
   color: #1DBA90;
   position: absolute;
   top: 40%;
-  left: 50px;
+  left: 10px;
   cursor: pointer;
   z-index: 2;
   display: flex;
