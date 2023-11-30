@@ -61,16 +61,19 @@
                         </div>
                         <div class="search">
                             <div class="search-icon" onclick="toggleSearch()"><img src="assets/images/serach.png" alt="" class="img-fluid"></div>
-                            <div class="input-group mb-3 search-form">
-                                <button type="submit" class="input-group-text" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="input-group  search-form">
+                                <button type="submit" class="input-group-text px-4" ><i class="fa-solid fa-magnifying-glass"></i></button>
                                 <input class="form-control" type="text" placeholder="serach">
-                                <span class="input-group-text"  onclick="toggleSearch()">&times;</span>
+                                <button type="button" class="input-group-tex px-4"  onclick="toggleSearch()"><i class="fa-solid fa-circle-xmark"></i></button>
                             </div>
                         </div>
                         <div class="theme-light-dark  position-inherit">
                             <a href="#0" class="search-icon" onclick="toggleTheme()"><img src="assets/images/sun.png" alt="n/a" class="img-fluid"></a>
                         </div>
                     </div>
+                </div>
+                <div class="middle-menu">
+                    <div class="d-flex justify-content-center pt-3 mb-3"><img src="assets/images/logo.png" alt="n/a" class="img-fluid"></div>
                 </div>
                 <div>
                     <div class="right-side-menu">
@@ -103,51 +106,51 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="sidebar-menu">
-        <div class="top-bar">
-            <div class="d-flex justify-content-center pt-4 mb-2"><img src="assets/images/logo.png" alt="n/a" class="img-fluid"></div>
-            <div class="d-flex justify-content-center align-items-center mb-2">
-                <select class="form-select form-select-sm me-3" aria-label="Small select example">
-                    <option selected>Create Now</option>
-                    <option value="1">Action</option>
-                    <option value="2">Link 1</option>
-                    <option value="3">Link 2</option>
-                </select>
-                <select class="form-select form-select-sm" aria-label="Small select example">
-                    <option selected>ENG</option>
-                    <option value="1">BN</option>
-                    <option value="2">CH</option>
-                    <option value="3">JP</option>
-                </select>
-                <div class="search-sidebar">
-                    <div class="search-icon" onclick="toggleSearch()"><img src="assets/images/search-mobile.png" alt="" class="img-fluid"></div>
-                    <div class="input-group mb-3 search-form">
-                        <button type="submit" class="input-group-text" ><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input class="form-control" type="text" placeholder="serach">
-                        <span class="input-group-text"  onclick="toggleSearch()">&times;</span>
+        <div class="sidebar-menu">
+            <div class="top-bar pt-3">
+                <!-- <div class="d-flex justify-content-center pt-4 mb-2"><img src="assets/images/logo.png" alt="n/a" class="img-fluid"></div> -->
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <select class="form-select form-select-sm me-3" aria-label="Small select example">
+                        <option selected>Create Now</option>
+                        <option value="1">Action</option>
+                        <option value="2">Link 1</option>
+                        <option value="3">Link 2</option>
+                    </select>
+                    <select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>ENG</option>
+                        <option value="1">BN</option>
+                        <option value="2">CH</option>
+                        <option value="3">JP</option>
+                    </select>
+                    <div class="search-sidebar">
+                        <div class="search-icon" onclick="toggleSearch()"><img src="assets/images/search-mobile.png" alt="" class="img-fluid"></div>
+                        <div class="input-group mb-3 search-form">
+                            <button type="submit" class="input-group-text" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input class="form-control" type="text" placeholder="serach">
+                            <span class="input-group-text"  onclick="toggleSearch()">&times;</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="sidebar-main-menu">
+                <p>SB Pedia</p>
+                <ul class="main-menu">
+                    <li><a href="#0"><img src="assets/images/home.png" alt="" class="img-fluid"> Home</a></li>
+                    <li><a href="#0"><img src="assets/images/world.png" alt="" class="img-fluid"> SB World</a></li>
+                    <li><a href="#0"><img src="assets/images/academi.png" alt="" class="img-fluid"> Academia</a></li>
+                    <li><a href="#0"><img src="assets/images/event.png" alt="" class="img-fluid"> Events</a></li>
+                    <li><a href="#0"><img src="assets/images/design.png" alt="" class="img-fluid"> Design Lab</a></li>
+                    <li><a href="#0"><img src="assets/images/news.png" alt="" class="img-fluid"> SB News & Media</a></li>
+                    <li><a href="#0"><img src="assets/images/wiki.png" alt="" class="img-fluid"> SB Wiki</a></li>
+                    <li><a href="#0"><img src="assets/images/video.png" alt="" class="img-fluid"> SB Video</a></li>
+                    <li><a href="#0"><img src="assets/images/update.png" alt="" class="img-fluid"> Sb Updatesd</a></li>
+                    <li><a href="#0"><img src="assets/images/network.png" alt="" class="img-fluid"> SB Networks</a></li>
+                    <li><a href="#0"><img src="assets/images/book.png" alt="" class="img-fluid"> Book Shop</a></li>
+                    <li><a href="#0"><img src="assets/images/help.png" alt="" class="img-fluid"> Help Desk</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="sidebar-main-menu">
-            <p>SB Pedia</p>
-            <ul class="main-menu">
-                <li><a href="#0"><img src="assets/images/home.png" alt="" class="img-fluid"> Home</a></li>
-                <li><a href="#0"><img src="assets/images/world.png" alt="" class="img-fluid"> SB World</a></li>
-                <li><a href="#0"><img src="assets/images/academi.png" alt="" class="img-fluid"> Academia</a></li>
-                <li><a href="#0"><img src="assets/images/event.png" alt="" class="img-fluid"> Events</a></li>
-                <li><a href="#0"><img src="assets/images/design.png" alt="" class="img-fluid"> Design Lab</a></li>
-                <li><a href="#0"><img src="assets/images/news.png" alt="" class="img-fluid"> SB News & Media</a></li>
-                <li><a href="#0"><img src="assets/images/wiki.png" alt="" class="img-fluid"> SB Wiki</a></li>
-                <li><a href="#0"><img src="assets/images/video.png" alt="" class="img-fluid"> SB Video</a></li>
-                <li><a href="#0"><img src="assets/images/update.png" alt="" class="img-fluid"> Sb Updatesd</a></li>
-                <li><a href="#0"><img src="assets/images/network.png" alt="" class="img-fluid"> SB Networks</a></li>
-                <li><a href="#0"><img src="assets/images/book.png" alt="" class="img-fluid"> Book Shop</a></li>
-                <li><a href="#0"><img src="assets/images/help.png" alt="" class="img-fluid"> Help Desk</a></li>
-            </ul>
-        </div>
-    </div>
+    </header>
     <!-- menu end -->
     <!-- banner start -->
     <section class="banner-area">
@@ -559,6 +562,23 @@
                 },
             },
         });
+        // javascript for remove class on scroll top and add on scroll down 
+var lastScrollTop = 0;
+var header =  document.querySelector("header");
+window.addEventListener("scroll",function(){
+var scrollTop = window.pageYOffset || document
+.documentElement.scrollTop;
+if(scrollTop == 0){
+    header.classList.remove("fixed");
+}
+else if(scrollTop > lastScrollTop){
+    header.classList.add("fixed");
+}
+else{
+    header.classList.add("fixed");
+}
+lastScrollTop = scrollTop;
+});
     </script>
   </body>
 </html>

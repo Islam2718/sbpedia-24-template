@@ -72,6 +72,19 @@ a {
   background-color: #fff;
   border: 1px solid #E7EAED;
   height: 70px;
+  transition: all 0.2s ease-in-out;
+}
+.header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header.fixed .middle-menu {
+  display: block;
+}
+.header .middle-menu {
+  display: none;
 }
 .header .menu-area {
   display: none;
@@ -117,14 +130,15 @@ a {
   }
   .header .menu-area .left-side-menu .search .search-form {
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 10px;
     width: 0;
     opacity: 0;
     transition: all 0.5s ease;
   }
   .header .menu-area .left-side-menu .search .search-form.active {
-    width: 300px;
+    width: 99%;
+    height: 70px;
     opacity: 1;
   }
   .header .menu-area .middle-menu .logo p {
@@ -182,6 +196,29 @@ a {
 .header .mobile-menu-area .left-side-menu a:hover {
   text-decoration: underline;
 }
+.header .mobile-menu-area .left-side-menu .search-icon {
+  padding: 5px 0;
+}
+.header .mobile-menu-area .left-side-menu .search-icon img {
+  max-height: 29px;
+}
+.header .mobile-menu-area .left-side-menu .search {
+  font-size: 1rem;
+  position: inherit;
+}
+.header .mobile-menu-area .left-side-menu .search .search-form {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.header .mobile-menu-area .left-side-menu .search .search-form.active {
+  width: 99%;
+  height: 70px;
+  opacity: 1;
+}
 .header .mobile-menu-area .right-side-menu {
   height: 100%;
   display: flex;
@@ -211,7 +248,7 @@ a {
 .sidebar-menu {
   box-shadow: 0px 5px 20px 0px rgba(203, 202, 202, 0.2509803922);
   position: absolute;
-  width: 100%;
+  width: 99.9%;
   z-index: 99;
   transition: all 0.2s ease-in-out;
   transform: scaley(0);
@@ -301,6 +338,7 @@ a {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
+  justify-content: start;
 }
 .banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .icon-area img {
   height: 31px;
@@ -312,6 +350,7 @@ a {
   font-size: 16px;
   color: #4F4F4F;
   font-weight: bold;
+  margin: 0;
 }
 .banner-area .banner-slider-area .mySwiper .swiper-wrapper .swiper-slide .slider-content p {
   font-size: 14px;
